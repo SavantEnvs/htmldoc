@@ -1025,8 +1025,9 @@ file_proxy(const char *url)		/* I - URL of proxy server */
                     username, sizeof(username), hostname, sizeof(hostname),
 		    &port, resource, sizeof(resource));
 
-    if (strcmp(scheme, "http") == 0)
+    if (!strcmp(scheme, "http") || !strcmp(scheme, "https"))
     {
+      strlcpy(proxy_scheme, scheme, sizeof(proxy_scheme));
       strlcpy(proxy_host, hostname, sizeof(proxy_host));
       proxy_port = port;
     }

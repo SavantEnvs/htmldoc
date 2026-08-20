@@ -19,6 +19,7 @@ v1.9.24 - YYYY-MM-DD
 - Fixed a crash bug when generating EPub content with `--webpage` (Issue #567)
 - Fixed an out-of-bounds read bug in the roman numeral formatting code
   (Issue #568)
+- Fixed an issue with proxy support (Issue #570)
 - Fixed an issue with `--no-localfiles` (Issue #571)
 
 
