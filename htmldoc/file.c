@@ -664,7 +664,7 @@ file_find(const char *path,		/* I - Path "dir;dir;dir" */
 
   DEBUG_printf(("file_find(path=\"%s\", s=\"%s\")\n", path ? path : "(null)", s));
 
-#ifdef HAVE_CUPS
+#ifdef HAVE_LIBCUPS
  /*
   * See if this is a cached remote file...
   */
